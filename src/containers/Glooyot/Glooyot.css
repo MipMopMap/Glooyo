@@ -1,0 +1,15 @@
+.glooyot-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  height: calc(100vh - 6.4rem);
+  overflow-y: scroll;
+  padding-top: 2rem;
+  width: 1180px;
+  z-index: 0;
+  padding-top: 5rem;
+  margin-top: -4rem;
+  position: relative;
+  scroll-behavior: smooth;
+}

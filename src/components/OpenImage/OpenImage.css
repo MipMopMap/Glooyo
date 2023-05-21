@@ -1,0 +1,88 @@
+.open-image-wrapper {
+  background-color: white;
+
+  padding: 2rem;
+  border-radius: 3rem;
+  width: 1180px;
+
+  height: calc(100vh - 6rem);
+
+  animation: shloop 0.3s ease-in-out;
+  position: absolute;
+  z-index: 99999999;
+  transform-origin: left;
+}
+
+.go-reverse {
+  -webkit-animation: reverseShloop 0.3s ease-in-out both;
+  animation: reverseShloop 0.3s ease-in-out both;
+}
+
+.expand-column {
+  width: 550px;
+  height: 350px;
+  margin: auto;
+}
+
+.expand-column.vertical-expand {
+  width: 350px;
+  height: 550px;
+}
+
+.expand-content {
+  width: 100%;
+  height: 100%;
+  transition: 200ms ease-in-out;
+}
+
+.expand-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  border-radius: 0.25rem;
+  border: 3px solid #222222;
+  border-radius: 1rem;
+}
+
+.expand-wrapper {
+  height: 100%;
+}
+
+.column-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.close-open-image {
+  display: flex;
+  margin-left: auto;
+}
+
+.rotate-image {
+  display: flex;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #f1f4fa;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.open-image-options {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+  gap: 2rem;
+  margin-top: -2rem;
+}

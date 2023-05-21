@@ -1,0 +1,145 @@
+.glooya-wrapper {
+  margin: auto;
+  width: 100%;
+  height: 520px;
+  display: flex;
+  margin-bottom: 3.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.glooya-wrapper:has(.glooya-horizontal) {
+  flex-direction: row-reverse;
+  flex-direction: column;
+}
+
+.glooya-wrapper h1 {
+  font-family: var(--font-family-title);
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.glooya-glooya {
+  width: 300px;
+  /* width: 100%; */
+  height: 100%;
+  /* margin: auto; */
+}
+
+.glooya-horizontal {
+  width: 100%;
+}
+
+.glooya-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.glooya-inner.isFlipped {
+  transform: rotateY(180deg);
+}
+
+.glooya-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  border-radius: 0.25rem;
+  border: 3px solid #222222;
+  border-radius: 1rem;
+}
+
+.glooya-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glooya-back {
+  transform: rotateY(180deg);
+}
+
+.glooya-text {
+  /* margin-top: 1rem; */
+  max-width: 400px;
+  /* text-align: center; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.glooya-text {
+  font-family: var(--font-family);
+}
+
+.glooya-price {
+  align-self: flex-end;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.tags-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+}
+
+.tags p {
+  background-color: #222222;
+  width: max-content;
+  color: #fcfcfc;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+
+.glooya-end {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.edit-glooya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  transition: 200ms;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.edit-glooya:hover {
+  /* opacity: 0.9; */
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}

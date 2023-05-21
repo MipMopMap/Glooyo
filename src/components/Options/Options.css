@@ -1,0 +1,40 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sort-button {
+  background: none;
+  outline: none;
+  border: none;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 3rem 1rem 3rem;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  margin-left: -2px;
+  transition: 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-option {
+  border-left: 2px solid #fff;
+  border-right: 2px solid transparent;
+  background: #222222;
+}
+
+.sort-button:hover {
+  background-color: #222222;
+}
+
+.sort-button svg {
+  transition: 200ms;
+}
+
+.sort-button:hover svg {
+  fill: #f5f0d9;
+}

@@ -1,0 +1,187 @@
+.form-wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 3rem;
+  width: 1180px;
+  height: 100%;
+  height: calc(100vh - 6rem);
+
+  animation: shloop 0.3s ease-in-out;
+  position: absolute;
+  z-index: 99999999;
+  transform-origin: left;
+}
+
+.close-form-anim {
+  animation: reverseShloop 0.3s ease-in-out both;
+}
+
+.form-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.close-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+  background-color: #f1f4fa;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: auto;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+::file-selector-button {
+  display: none;
+}
+
+.form-files {
+  display: flex;
+  gap: 1rem;
+
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.file {
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 150px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
+  padding-top: 0.5rem;
+  width: 200px;
+  align-items: center;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 38px;
+  position: relative;
+  transition: all 100ms;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #777;
+  font-family: var(--font-family);
+}
+
+.file-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  position: relative;
+}
+.z {
+  z-index: 2000;
+  max-width: 200px;
+}
+
+.css-3w2yfm-ValueContainer {
+  max-height: 38px;
+  overflow-y: scroll !important;
+}
+
+.css-13cymwt-control .css-3w2yfm-ValueContainer div {
+  width: auto !important;
+}
+
+.file-container label {
+  position: absolute;
+  top: -7px;
+  z-index: 1;
+  background-color: white;
+  color: #1f1f1f;
+  font-size: 12px;
+  left: 10px;
+  padding: 0 4px 0 4px;
+}
+
+.posiotions {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.position {
+  width: 75px;
+  height: 75px;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 1rem;
+
+  outline: 2px solid white;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.horizontal {
+  width: 40px;
+  height: 30px;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5px;
+}
+
+.vertical {
+  width: 30px;
+  height: 40px;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 5px;
+}
+
+.on {
+  opacity: 0.5;
+  outline: 2px solid transparent;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #f1f4fa;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+}
